@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Потрфолио</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item">
+		<style>
+    a:visited {
+           color: #800080; /* Цвет посещенной ссылки */
+       } 
+    a:hover {  
+          background: #7e0059; /* Цвет фона */
+       }
+         </style>
+         
+            <a href="index.html">Главная</a></li>
+			<li><a href="Глр.html">Мои работы</a></li>
+			<li><a href="Сво.html">О себе</a></li>
+			
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+			<h1>Портфолио</h1>
+		</div>
+	</div>
+	<!-- end #header -->
+<div id="page">
+		<div class="post">
+		<p>На данном сайте - портфолио представлены работы студентки группы ИС-15 Ачинского техникума нефти и газа. Работы были выполнены во время учебной практики, в таких программах, как: Adobe Photoshop, CorelDRAW, Blender, Word.</p>
+		</div>
+		<div id="page">
+		<div class="post"><script type="text/javascript">
+all_images = new Array (
+"images/1.jpg" ,
+"images/о.jpg",
+"images/71.jpg");
+var ImgNum = 0;
+var ImgLength = all_images.length - 1;
+var delay = 2500;
+var lock = false;
+var run;
+
+function chgImg(direction) {
+ if (document.images) {
+  ImgNum = ImgNum + direction;
+  if (ImgNum > ImgLength) { ImgNum = 0; }
+  if (ImgNum < 0) { ImgNum = ImgLength; }
+  document.slide_show.src = all_images[ImgNum];
+ }
+}
+
+function auto() {
+ if (lock == true) {
+  lock = false;
+  window.clearInterval(run);
+ }
+ else if (lock == false) {
+  lock = true;
+  run = setInterval("chgImg(1)", delay);
+ }
+}
+</script>
+<div align="center">
+ <table border="0">
+  <tr align="center">
+   <td colspan="3"><img src="images/1.jpg"  width="900" height="300" alt="" name="slide_show"></td>
+  </tr>
+ </table>
+</div>
+<script type="text/javascript">
+ auto();
+</script></div>
+	</div>
+
+	<div id="footer">
+		<p>&copy; 2017. Portfolio. Bortkoba Yliana All rights reserved.</p>
+	</div>
+	<!-- end #footer --> 
+</div>
+</body>
+</html>
